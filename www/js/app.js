@@ -358,6 +358,33 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 			}
 		}
 	})
+	.state('app.members', {
+		url: '/members',
+		views: {
+			'menuContent': {
+				templateUrl: 'templates/appView/members.html',
+				controller: "MembersCtrl"
+			}
+		}
+	})
+	.state('app.memberslist', {
+		url: '/memberslist',
+		views: {
+			'menuContent': {
+				templateUrl: 'templates/appView/memberslist.html',
+				controller: "MemberslistCtrl"
+			}
+		}
+	})
+	.state('app.chat', {
+		url: '/chat',
+		views: {
+			'menuContent': {
+				templateUrl: 'templates/appView/chat.html',
+				controller: "ChatCtrl"
+			}
+		}
+	})
 
 	.state('app.search', {
 		url: '/search',
