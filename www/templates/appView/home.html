@@ -1,0 +1,10 @@
+<ion-view view-title="Home">
+    <ion-content>
+        <ion-slide-box on-slide-changed="slideHasChanged($index)">
+            <ion-slide ng-repeat="slide in slides track by $index">
+                <img ng-src="{{slide.image | serverimage}}" class="full-image">
+            </ion-slide>
+        </ion-slide-box>
+        <div class="padding" ng-bind-html="content.content"></div>
+    </ion-content>
+</ion-view>

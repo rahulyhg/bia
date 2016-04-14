@@ -1,0 +1,35 @@
+<ion-view view-title="Audio">
+    <div class="text-center positive middle-align">
+
+    </div>
+    <ion-content>
+      <ion-list>
+          <ion-item ng-repeat="item in audio" class="item-text-wrap audio-box">
+            <div class="play-on">
+                <div class="image-adjust audio-img" ng-style="{'background-image':'url({{item.img}})'}"></div>
+                <div class="on-hover">
+                  <i class="ln-circle-pause"></i>
+                </div>
+            </div>
+
+              <h2>{{item.name}}</h2>
+              <p>{{item.desc}}</p>
+              <ion-option-button class="button-positive" ng-click="share(item)">
+                  Share
+              </ion-option-button>
+          </ion-item>
+          <ion-infinite-scroll on-infinite="loadMorePolls()" ng-if="keepscrolling" distance="25%">
+          </ion-infinite-scroll>
+      </ion-list>
+    </ion-content>
+    <div class="bar bar-footer bar-stable">
+  <div class="text-center audio-btn">
+    <i class="ln-circle-previous audio-prev">
+    </i>
+    <i class="ln-circle-play audio-play">
+    </i>
+    <i class="ln-circle-next audio-next">
+    </i>
+  </div>
+</div>
+</ion-view>

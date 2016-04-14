@@ -1,0 +1,17 @@
+<ion-view view-title="Photo Category">
+    <div class="text-center positive middle-align" ng-if="msg != ''">
+        {{msg}}
+    </div>
+    <ion-content class="padding">
+        <div class="list" ng-repeat="photos in photos" ng-click="sendphotoid(photos.id);">
+            <div class="item item-image">
+                <img ng-src="{{photos.image | serverimage}}" imgloadingsec>
+            </div>
+            <div class="item">
+                {{photos.name}}
+            </div>
+        </div>
+        <ion-infinite-scroll on-infinite="loadMorePolls()" ng-if="keepscrolling" distance="25%">
+        </ion-infinite-scroll>
+    </ion-content>
+</ion-view>

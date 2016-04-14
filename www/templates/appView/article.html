@@ -1,0 +1,12 @@
+<ion-view view-title="{{article.title}}">
+    <div class="text-center positive middle-align" ng-if="msg != ''">
+        {{msg}}
+    </div>
+    <ion-content>
+        <img class="full-image" imgloadingsec ng-src="{{article.image|serverimage}}" ng-if="article.image">
+        <div class="padding">
+            <h3>{{article.title}}</h3>
+            <div ng-bind-html="article.content"></div>
+        </div>
+    </ion-content>
+</ion-view>
