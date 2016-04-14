@@ -9806,11 +9806,37 @@ a,
 a:hover {
   text-decoration: none; }
 
+.overlay-black {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); }
+
 .chat-section {
   padding: 0px 20px; }
-  .chat-section h4 {
-    width: 250px;
-    border-radius: 100px; }
+  .chat-section .messages {
+    text-align: right; }
+    .chat-section .messages .msg {
+      margin: 10px 0 5px;
+      background: #C8C8C8 !important;
+      display: inline-block !important;
+      color: white !important;
+      padding: 10px !important;
+      border-radius: 0px 5px 5px 5px !important;
+      text-align: left !important;
+      max-width: 240px !important;
+      position: relative; }
+      .chat-section .messages .msg:after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: -10px;
+        top: 0;
+        bottom: auto;
+        border: 12px solid;
+        border-color: #C8C8C8 transparent transparent transparent; }
 
 .header-item {
   text-align: center !important; }
@@ -9829,7 +9855,7 @@ a:hover {
   font-weight: bold; }
 
 .login_back {
-  background: url("../img/bg-login.jpg") no-repeat center center;
+  background: url("../img/bglogin.jpg") no-repeat center center;
   background-size: 100% 100%; }
 
 .login-tab {
@@ -9885,7 +9911,7 @@ a:hover {
   margin-top: 15px !important; }
 
 .login-bg {
-  background: url("../img/bg-login.jpg") no-repeat center center;
+  background: url("../img/bglogin.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
