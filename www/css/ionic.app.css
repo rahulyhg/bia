@@ -9822,11 +9822,12 @@ a:hover {
       background: #C8C8C8 !important;
       display: inline-block !important;
       color: white !important;
-      padding: 10px !important;
+      padding: 8px 10px !important;
       border-radius: 0px 5px 5px 5px !important;
       text-align: left !important;
       max-width: 240px !important;
-      position: relative; }
+      position: relative;
+      line-height: 100%; }
       .chat-section .messages .msg:after {
         content: ' ';
         position: absolute;
@@ -9837,6 +9838,16 @@ a:hover {
         bottom: auto;
         border: 12px solid;
         border-color: #C8C8C8 transparent transparent transparent; }
+      .chat-section .messages .msg .time {
+        margin-left: 15px;
+        float: right;
+        font-size: 10px; }
+
+.chat-area {
+  padding-left: 8px;
+  width: 94%;
+  background: transparent;
+  line-height: 18px; }
 
 .header-item {
   text-align: center !important; }
