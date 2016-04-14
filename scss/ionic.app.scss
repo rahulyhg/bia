@@ -30,7 +30,7 @@ $color5:#343e48;
 $font-family-sans-serif: "Lato", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !default;
 $font-family-light-sans-serif: "Lato-light", "HelveticaNeue-Light", "Roboto-Light", "Segoe UI-Light", sans-serif-light !default;
 
-$login-bg-image:url('../img/bglogin.jpg') no-repeat center center;
+$login-bg-image:url('../img/back-login.jpg') no-repeat center center;
 
 $card-box-shadow: none !default;
 
@@ -214,9 +214,9 @@ a:hover {
 }
 .chat-area {
   padding-left: 8px;
-width: 94%;
-background: transparent;
-line-height: 18px;
+  width: 94%;
+  background: transparent;
+  line-height: 18px;
 }
 // end chat
 .header-item { text-align: center !important; }

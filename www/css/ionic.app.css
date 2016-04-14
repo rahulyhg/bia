@@ -9866,7 +9866,7 @@ a:hover {
   font-weight: bold; }
 
 .login_back {
-  background: url("../img/bglogin.jpg") no-repeat center center;
+  background: url("../img/back-login.jpg") no-repeat center center;
   background-size: 100% 100%; }
 
 .login-tab {
@@ -9922,7 +9922,7 @@ a:hover {
   margin-top: 15px !important; }
 
 .login-bg {
-  background: url("../img/bglogin.jpg") no-repeat center center;
+  background: url("../img/back-login.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
