@@ -4,7 +4,7 @@
     </div>
     <ion-content>
         <ion-list class="full-width">
-            <ion-item ng-repeat="item in notify" class="item-text-wrap" ng-click="notifyclick(item)">
+            <ion-item ng-repeat="item in notify" class="item-text-wrap">
                 <img ng-if="item.image" ng-src="{{item.image | serverimage}}" class="full-image" ng-if="item.image">
                 <p>{{item.content}}</p>
                 <p ng-if="item.linktype == 17">{{item.link}}</p>
