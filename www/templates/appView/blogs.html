@@ -1,4 +1,4 @@
-<ion-view view-title="Blog">
+<ion-view view-title="Newsfeed">
     <div class="text-center positive middle-align" ng-if="msg != ''">
         {{msg}}
     </div>
@@ -59,12 +59,14 @@
                 </p>
             </div>
         </div>
-        
+
         <div class="padding card" ng-repeat="blog in blogs" ng-show="showCustomblog">
-            <ion-item class="item-avatar item-icon-right">
-            <div class="image-adjust img-blog" ng-style="{'background-image':'url(http://a.13cdn.com/Facebook_TaylorSwift.png)'}"></div>
-                <h2>{{blog.name}}</h2>
+            <ion-item>
+            <!-- <div class="image-adjust img-blog" ng-style="{'background-image':'url(http://a.13cdn.com/Facebook_TaylorSwift.png)'}"></div> -->
+              <div class="padding-horizontal">
+                  <h2>{{blog.title}}</h2>
                 <p ng-if="blog.timestamp">{{blog.timestamp|formatdate}}</p>
+              </div>
             </ion-item>
             <div class="item item-body" ng-click="blogDetail(blog,'cms');">
 <!--                <img class="full-image" ng-src="{{blog.photos[0].original_size.url}}">-->
