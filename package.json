@@ -35,7 +35,12 @@
       "locator": "https://github.com/danwilson/google-analytics-plugin.git",
       "id": "cordova-plugin-google-analytics"
     },
-    "phonegap-plugin-push"
+    {
+      "variables": {
+        "SENDER_ID": "351394231268"
+      },
+      "locator": "phonegap-plugin-push"
+    }
   ],
   "cordovaPlatforms": [
     "ios",
