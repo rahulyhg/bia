@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.blazen.businessapp" version="1.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>BusinessApp</name>
+<widget id="com.wohlig.bia" version="1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>BIA</name>
     <description>
-            A Template for Business.
+            Bombay Industrial Association.
         </description>
     <author email="info@wohlig.com" href="http://www.wohlig.com/">
             wohlig
@@ -33,7 +33,7 @@
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#c12828" />
     <preference name="StatusBarStyle" value="lightcontent" />
-    <preference name="SplashScreenBackgroundColor" value="#000" />
+    <preference name="SplashScreenBackgroundColor" value="#fff" />
     <preference name="AutoHideSplashScreen" value="true" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <preference name="SplashScreen" value="screen" />
