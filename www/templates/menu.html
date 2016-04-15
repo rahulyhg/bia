@@ -26,11 +26,11 @@
         </div>
         <ion-content ng-class="logso">
             <div class="list menu-set">
+              <ion-item nav-clear menu-close class="item-icon-left item-complex" ui-sref-active="bordered" ui-sref="app.members">
+                  <i class="icon ln-users"></i>Members
+              </ion-item>
                 <ion-item nav-clear menu-close class="item item-icon-left" ui-sref="app.{{menu.link}}({id:menu.typeid})" ui-sref-active="bordered" ng-repeat="menu in menudata">
                     <i class="icon {{menu.icon}}"></i>{{menu.name}}
-                </ion-item>
-                <ion-item nav-clear menu-close class="item-icon-left item-complex" ui-sref-active="bordered" ui-sref="app.members">
-                    <i class="icon ln-users"></i>Members
                 </ion-item>
                 <ion-item nav-clear menu-close class="item item-icon-left item-complex" ng-click="logout()" ui-sref-active="bordered" ng-if="menu.setting">
                     <div class="item-content"><i class="icon ln-arrow-right2"></i>Logout</div>
