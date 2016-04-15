@@ -4,8 +4,7 @@
     </div>
     <ion-content>
         <ion-list>
-            <!-- <ion-item ng-repeat="event in events" class="item-thumbnail-left item-text-wrap" ng-click="geteventdetails(event.id);"> -->
-              <ion-item ng-repeat="event in events" class="item-thumbnail-left item-text-wrap">
+            <ion-item ng-repeat="event in events" class="item-thumbnail-left item-text-wrap" ng-click="geteventdetails(event.id);">
                 <div class="image-adjust img-content" ng-style="{'background-image':'url({{event.image|serverimage}})'}"></div>
                 <h2>{{event.title}}</h2>
                 <span class="icon-space"><i class="icon ln-calendar3"></i></span><span class="font-light">{{event.startdate|date : 'dd MMM, yyyy'}}</span>
