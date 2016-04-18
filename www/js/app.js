@@ -20,6 +20,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 
 .run(function ($ionicPlatform, MyServices) {
 	$ionicPlatform.ready(function () {
+		console.log("Its ready now");
 		if (window && window.plugins && window.plugins.socialsharing && window.plugins.socialsharing.share) {
 			socialShare = window.plugins.socialsharing.share;
 		}
@@ -41,6 +42,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 		}else{
 			isapp = false;
 		}
+
 		try {
 			push = PushNotification.init({
 				"android": {
@@ -49,13 +51,13 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 				},
 				"ios": {
 					"alert": "true",
-					"badge": "true",
+					"badge": "false",
 					"sound": "true"
-				},
-				"windows": {}
+				}
 			});
 
 			push.on('registration', function (data) {
+				console.log("This is the fucking key we are looking for");
 				console.log(data);
 
 				function setNoti(data) {
@@ -87,7 +89,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 			});
 		}
 		catch (e) {
-			console.log(e)
+			console.log(e);
 		}
 	});
 })
