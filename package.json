@@ -35,7 +35,8 @@
       "id": "cordova-plugin-google-analytics"
     },
     "ionic-plugin-keyboard",
-    "phonegap-plugin-push"
+    "phonegap-plugin-push",
+    "phonegap-plugin-push@1.6.0"
   ],
   "cordovaPlatforms": [
     "ios",

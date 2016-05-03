@@ -369,15 +369,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 			}
 		}
 	})
-	.state('app.memberslist', {
-		url: '/memberslist',
-		views: {
-			'menuContent': {
-				templateUrl: 'templates/appView/memberslist.html',
-				controller: "MemberslistCtrl"
-			}
-		}
-	})
 	.state('app.chat', {
 		url: '/chat',
 		views: {
