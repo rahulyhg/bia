@@ -1769,9 +1769,6 @@ angular.module('starter.controllers', ['starter.services', 'ion-gallery', 'ngCor
 .controller('MembersCtrl', function ($scope, MyServices, $ionicLoading, $filter, $location) {
 	addanalytics("Members page");
 })
-.controller('MemberslistCtrl', function ($scope, MyServices, $ionicLoading, $filter, $location) {
-	addanalytics("Memberslist page");
-})
 .controller('ChatCtrl', function ($scope, MyServices, $ionicLoading, $filter, $location) {
 	addanalytics("Chat page");
 	$scope.hideTime = true;
