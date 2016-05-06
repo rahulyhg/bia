@@ -157,6 +157,11 @@ angular.module('starter.services', [])
 					withCredentials: false
 				}).success(callback).error(err);
 			},
+			getallmembers: function (callback, err) {
+				return $http.get(adminurl + 'getAllMember', {
+					withCredentials: false
+				}).success(callback).error(err);
+			},
 			getallevents: function (pageno, callback, err) {
 
 				return $http.get(adminurl + 'getAllEvents?pageno=' + pageno + '&maxrow=' + 15, {

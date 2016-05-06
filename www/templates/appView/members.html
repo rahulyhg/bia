@@ -1,6 +1,6 @@
 <ion-view view-title="Members">
   <ion-content>
-    <div class="list">
+    <div class="list" >
       <ion-item class="item-thumbnail-left">
           <div class="image-adjust img-content" ng-style="{'background-image':'url(img/logo1.png)'}"></div>
         <h2>Bombay Industrial Association</h2>
@@ -9,16 +9,13 @@
       <div class="item item-divider">
         Stake Holders
       </div>
-      <ion-item class="item-avatar">
-        <div class="image-adjust" ng-style="{'background-image':'url(img/amit.png)'}"></div>
-        <h2>Amit G .Chaudhari</h2>
-        <p>President</p>
+      <ion-item class="item-avatar" ng-repeat="member in members">
+        <div class="image-adjust" ng-style="{'background-image':'url({{member.image | profileimg}})'}"></div>
+        <!-- <div class="image-adjust" ng-style="{'background-image':'url(img/amit.png)'}"></div> -->
+        <h2>{{member.name}}</h2>
+        <p>{{member.designation}}</p>
       </ion-item>
-      <ion-item class="item-avatar">
-        <div class="image-adjust" ng-style="{'background-image':'url(img/rajendra.png)'}"></div>
-        <h2>Rajendra R .Kothari</h2>
-        <p>Vice President</p>
-      </ion-item>
+
     </div>
   </ion-content>
 </ion-view>
