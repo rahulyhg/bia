@@ -1,0 +1,28 @@
+<ion-view view-title="Opinion Polls">
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <h2>Do you know Mance Rayder?</h2>
+        <div class="answers">
+          <button class="button button-positive button-outline button-small button-block">Yes</button>
+          <button class="button button-positive button-outline button-small button-block">No</button>
+          <button class="button button-positive button-outline button-small button-block icon-right ion-checkmark-circled">Maybe</button>
+          <div class="votes">
+            43 votes
+          </div>
+        </div>
+      </ion-item>
+      <ion-item ng-if="results">
+        <h2>Do you know Mance Rayder?</h2>
+        <div class="answers">
+            <div class="fit-bar star" style="width: 43%;">43%: Yes</div>
+            <div class="fit-bar" style="width: 33%;">33%: No</div>
+            <div class="fit-bar" style="width: 24%;">24%: Maybe <i class="icon ion-checkmark-circled"></i></div>
+          <div class="votes">
+            43 votes
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

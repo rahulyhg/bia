@@ -774,3 +774,43 @@ margin: 0px 5px;
 color: #fff;
     }
 }
+.answers {
+  border: 1px solid #DDDDDD;
+  padding: 10px;
+  .fit-bar {
+      background-color: #e8e8e8;
+      border-radius: 2px;
+      padding: 2px 10px;
+      font-size: 14px;
+    &.star {
+      background-color: $positive;
+    }
+    +.fit-bar {
+      margin-top: 10px;
+    }
+  }
+  .button {
+    margin: 0;
+    +.button {
+      margin-top: 10px;
+    }
+  }
+  .votes {
+    font-size: 12px;
+    padding: 10px 10px 0;
+    margin: 10px -10px 0;
+    border-top: 1px solid #ddd;
+    color: #777;
+  }
+}
+.outlined {
+  border: 1px solid $positive;
+  .button {
+    +.button {
+      border-left: 1px solid $positive !important;
+    }
+  }
+}
+.margin-top {
+  margin-top: 10px;
+}

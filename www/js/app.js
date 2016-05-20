@@ -387,6 +387,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
 				controller: "SearchCtrl"
 			}
 		}
+	})
+	.state('app.polls', {
+		url: '/polls',
+		views: {
+			'menuContent': {
+				templateUrl: 'templates/appView/polls.html',
+				controller: "PollsCtrl"
+			}
+		}
 	});
 
 	// if none of the above states are matched, use this as the fallback

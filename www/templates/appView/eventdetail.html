@@ -7,6 +7,11 @@
             <div class="min-height max-height" ng-if="eventdetail.image">
                 <img class="full-image" imgloadingsec ng-src="{{eventdetail.image | serverimage}}">
             </div>
+            <div class="button-bar outlined margin-top">
+            <a class="button button-positive button-outline button-small">Going</a>
+            <a class="button button-positive button-outline button-small">Not Going</a>
+            <a class="button button-positive button-outline button-small">Maybe</a>
+          </div>
             <div class="padding-horizontal">
                 <h4 class="dark">{{eventdetail.title}}</h4>
                 <p ng-if="eventdetail.timestamp||eventdetail.starttime">
