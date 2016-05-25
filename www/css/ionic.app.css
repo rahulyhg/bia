@@ -10330,3 +10330,12 @@ img.doneLoading {
 
 .margin-top {
   margin-top: 10px; }
+
+.ads {
+  padding: 0;
+  background-color: black;
+  background-image: inherit; }
+  .ads img {
+    height: 100%;
+    width: auto;
+    margin: 0 auto; }
