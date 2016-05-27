@@ -2002,6 +2002,10 @@ angular.module('starter.controllers', ['starter.services', 'ion-gallery', 'ngCor
 
 })
 
+.controller('PayCtrl', function($scope, MyServices, $location, $ionicLoading, $ionicPopup, $timeout) {
+
+})
+
 .controller('PollsCtrl', function($scope, MyServices, $location, $ionicLoading, $ionicPopup, $timeout) {
 
-});;
+});
